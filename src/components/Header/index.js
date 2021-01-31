@@ -21,12 +21,12 @@ const Head = props => {
     signUp:
       {
         title: 'Sign Up',
-        route: '/bookmark/sign-up'
+        route: '/speedometer/sign-up'
       },
     logOut:
       {
         title: 'Log Out',
-        route: '/bookmark'
+        route: '/speedometer'
       },
     
   };
@@ -69,7 +69,7 @@ const Head = props => {
             </Grid>
             <Grid item xs={10} sm={10} className="container-info-title">
               <Typography className='info-title'>
-                  Bookmark's
+                  Speedometer
               </Typography>
             </Grid>
           </Grid>

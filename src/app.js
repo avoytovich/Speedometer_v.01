@@ -21,22 +21,22 @@ const App = props => {
     <Context.Provider value={{dispatch, store}}>
       <Router history={history}>
         <Switch>
-          <Route path="/bookmark" component={LandingPage} />
+          <Route path="/speedometer" component={LandingPage} />
           <Route path="/user/:id" render={() => (
             checkAuth() ? (
-              <Redirect to="/bookmark"/>
+              <Redirect to="/speedometer"/>
             ) : (
               <Home test='test'/>
             )
           )}/>
           <Route path="/test" render={() => (
             checkAuth() ? (
-              <Redirect to="/bookmark"/>
+              <Redirect to="/speedometer"/>
             ) : (
               <Test />
             )
           )}/>
-          <Redirect from="/" to="/bookmark" />
+          <Redirect from="/" to="/speedometer" />
         </Switch>
       </Router>
     </Context.Provider>

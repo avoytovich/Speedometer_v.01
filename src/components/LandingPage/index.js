@@ -108,8 +108,7 @@ const LandingPage = props => {
                   className="landing-about"
                 >
                   <Typography className='landing-about-content'>
-                    Application allows efficient manage bookmarks
-                    of materials which was chosen by you
+                    Speedometer application gives info about services our company    
                   </Typography>
                 </div>
               </Grid>
