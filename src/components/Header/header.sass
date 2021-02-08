@@ -2,46 +2,80 @@
   display: flex
   justify-content: center
   align-items: center
-  position: fixed
+  flex-direction: column
+  // position: fixed
   width: 100%
   z-index: 1000
   min-height: 75px
-  background-color: #f2f5f5
-  .container-header
+  background-color: #6ac259
+  .container-header-photo
     display: flex
     justify-content: center
     align-items: center
-    .container-info
-      display: flex
-      justify-content: flex-start
-      align-items: center
-      .container-info-logo
-        display: flex
-        justify-content: flex-start
-        align-items: center
-        .info-logo
-          display: inline-block
-          background-repeat: no-repeat
-          background-position: center
-          background-size: contain
-      .container-info-title
-        display: flex
-        justify-content: center
-        align-items: center
-        .info-title
-          font-family: 'Spartan', sans-serif
-          font-size: 26px
-    .container-link
-      display: flex
-      justify-content: flex-end
-      align-items: center
-      .link-avatar
-        margin-right: 25px
-        display: inline-block
-        border-radius: 50px
+    .photo
+      position: relative
+      background-repeat: no-repeat
+      background-position: left top
+      background-size: cover
+      .logo
+        position: absolute
+        top: 25px
+        left: 25px
         background-repeat: no-repeat
         background-position: center
         background-size: contain
-      .link-auth
-        .link-title
-          color: #470b2f
+  .container-header-title
+    display: flex
+    justify-content: center
+    align-items: center
+    .title
+      margin: 0px 5px
+      font-family: 'Spartan', sans-serif
+      font-size: 24px
+      color: #f2f5f5
+  .container-header-address
+    display: flex
+    justify-content: center
+    align-items: center
+    .address
+      font-family: 'Spartan', sans-serif
+      font-size: 18px
+      color: #f2f5f5
+      &:hover
+        text-decoration: underline
+  .container-header-phone
+    margin: 5px 0px
+    display: flex
+    justify-content: center
+    align-items: center
+    .phone
+      font-family: 'Spartan', sans-serif
+      font-size: 18px
+      color: #f2f5f5
+    .call
+      margin-left: 10px
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: #f2f5f5
+      border-radius: 50px
+  .container-header-links-wrapper
+    background-color: #262626
+  .container-header-links
+    display: flex
+    justify-content: space-around
+    align-items: center
+    .link
+      font-family: 'Spartan', sans-serif
+      font-size: 18px
+      color: #f2f5f5
+      &:hover
+        text-decoration: underline
+    .services
+      cursor: pointer
+    .menu-item
+      justify-content: center
+      .link
+        font-family: 'Spartan', sans-serif
+        font-size: 18px
+        color: black
