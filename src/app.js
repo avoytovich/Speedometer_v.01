@@ -5,8 +5,7 @@ import LogRocket from 'logrocket';
 import history from './helper/history';
 import Context from './helper/context';
 import generalReducer from './utils/generalReducer';
-import { Home, LandingPage, Test } from './components';
-import checkAuth from './helper/redirections';
+import { Home, Diagnostic, Test } from './components';
 
 LogRocket.init('6vridg/test');
 
@@ -21,21 +20,14 @@ const App = props => {
     <Context.Provider value={{dispatch, store}}>
       <Router history={history}>
         <Switch>
-          <Route path="/speedometer" component={LandingPage} />
-          <Route path="/user/:id" render={() => (
-            checkAuth() ? (
-              <Redirect to="/speedometer"/>
-            ) : (
-              <Home test='test'/>
-            )
-          )}/>
-          <Route path="/test" render={() => (
-            checkAuth() ? (
-              <Redirect to="/speedometer"/>
-            ) : (
-              <Test />
-            )
-          )}/>
+          <Route path="/speedometer" component={Home} />
+          <Route path="/diagnostic" component={Diagnostic} />
+          <Route path="/chip-tuning" component={Test} />
+          <Route path="/delete-filter" component={Test} />
+          <Route path="/shutting-valve" component={Test} />
+          <Route path="/delete-system" component={Test} />
+          <Route path="/correction-speedometer" component={Test} />
+          <Route path="/contact" component={Test} />
           <Redirect from="/" to="/speedometer" />
         </Switch>
       </Router>

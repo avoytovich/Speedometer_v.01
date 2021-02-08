@@ -4,20 +4,22 @@ import { } from 'antd';
 import { get } from 'lodash';
 
 import Head from './../Header';
+import Footer from './../Footer';
 import connect from './../../utils/connectFunction';
 import action from './../../utils/actions';
 
-import './home.sass';
+import './layout.sass';
 
-const Home = props => {
-  console.log('Home props', props);
+const Layout = props => {
+  console.log('Layout props', props);
 
   return (
-    <div className="home-wrapper">
+    <div className="layout-wrapper">
       <Head/>
       <div className="wrapper-layout">
-        Hallo, Home
+        {props.children}
       </div>
+      <Footer/>
     </div>
   );
 };
@@ -34,4 +36,4 @@ const mapDispatchToProps = dispatch => {
   }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Layout);
