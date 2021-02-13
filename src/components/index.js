@@ -5,6 +5,7 @@ import LandingPage from './LandingPage';
 import Home from './Home';
 import Diagnostic from './Diagnostic';
 import ChipTunning from './ChipTunning';
+import DeleteFilter from './DeleteFilter';
 import Test from './Test';
 
 export {
@@ -15,5 +16,6 @@ export {
   LandingPage,
   Diagnostic,
   ChipTunning,
+  DeleteFilter,
   Test
 }
