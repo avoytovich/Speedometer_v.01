@@ -5,7 +5,7 @@ import LogRocket from 'logrocket';
 import history from './helper/history';
 import Context from './helper/context';
 import generalReducer from './utils/generalReducer';
-import { Home, Diagnostic, Test } from './components';
+import { Home, Diagnostic, ChipTunning, Test } from './components';
 
 LogRocket.init('6vridg/test');
 
@@ -22,7 +22,7 @@ const App = props => {
         <Switch>
           <Route path="/speedometer" component={Home} />
           <Route path="/diagnostic" component={Diagnostic} />
-          <Route path="/chip-tuning" component={Test} />
+          <Route path="/chip-tuning" component={ChipTunning} />
           <Route path="/delete-filter" component={Test} />
           <Route path="/shutting-valve" component={Test} />
           <Route path="/delete-system" component={Test} />
