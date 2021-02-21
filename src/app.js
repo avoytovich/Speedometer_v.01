@@ -12,7 +12,8 @@ import {
   DeleteFilter, 
   ShuttingValve, 
   DeleteSystem, 
-  CorrectionSpeedometer, 
+  CorrectionSpeedometer,
+  Contact,
   Test 
 } from './components';
 
@@ -36,7 +37,7 @@ const App = props => {
           <Route path="/shutting-valve" component={ShuttingValve} />
           <Route path="/delete-system" component={DeleteSystem} />
           <Route path="/correction-speedometer" component={CorrectionSpeedometer} />
-          <Route path="/contact" component={Test} />
+          <Route path="/contact" component={Contact} />
           <Redirect from="/" to="/speedometer" />
         </Switch>
       </Router>

@@ -9,6 +9,7 @@ import DeleteFilter from './DeleteFilter';
 import ShuttingValve from './ShuttingValve';
 import DeleteSystem from './DeleteSystem';
 import CorrectionSpeedometer from './CorrectionSpeedometer';
+import Contact from './Contact';
 import Test from './Test';
 
 export {
@@ -23,5 +24,6 @@ export {
   ShuttingValve,
   DeleteSystem,
   CorrectionSpeedometer,
+  Contact,
   Test
 }
