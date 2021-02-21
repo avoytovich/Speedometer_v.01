@@ -8,6 +8,7 @@ import ChipTunning from './ChipTunning';
 import DeleteFilter from './DeleteFilter';
 import ShuttingValve from './ShuttingValve';
 import DeleteSystem from './DeleteSystem';
+import CorrectionSpeedometer from './CorrectionSpeedometer';
 import Test from './Test';
 
 export {
@@ -21,5 +22,6 @@ export {
   DeleteFilter,
   ShuttingValve,
   DeleteSystem,
+  CorrectionSpeedometer,
   Test
 }
