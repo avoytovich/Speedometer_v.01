@@ -13,21 +13,21 @@ import connect from './../../utils/connectFunction';
 import action from './../../utils/actions';
 import SVG from './../../helper/customizeIcon';
 import {content} from './../../helper/constants';
-import imgDiagnostic from './../../assets/images/shutting-valve.png';
+import imgDiagnostic from './../../assets/images/delete-system.png';
 
-import './shuttingValve.sass';
+import './deleteSystem.sass';
 
-const ShuttingValve = props => {
-  console.log('ShuttingValve props', props);
+const DeleteSystem = props => {
+  console.log('DeleteSystem props', props);
 
   return (
-    <div className="shutting-valve-wrapper">
+    <div className="delete-system-wrapper">
       <Head/>
-      <div className="shutting-valve-layout">
+      <div className="delete-system-layout">
         <Grid container spacing={0} justify="center" alignItems="center">
           <Grid item xs={6} sm={6} className="container-header-title">
             <Typography variant='h3' className='title'>
-              Відключення клапана ЕГР
+              Видалення систем AdBlue, SCR, BlueTec
             </Typography>
           </Grid>
           <Grid item xs={6} sm={6} className="container-header-photo">
@@ -40,7 +40,7 @@ const ShuttingValve = props => {
         </Grid>
         <Grid container spacing={0} justify="center" alignItems="center">
           <Grid item xs={10} sm={10} className="container-content">
-            {content.shuttingValve.map(content => (
+            {content.deleteSystem.map(content => (
               <Typography className='content'>{content}</Typography>
             ))}
           </Grid>
@@ -63,4 +63,4 @@ const mapDispatchToProps = dispatch => {
   }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ShuttingValve);
+export default connect(mapStateToProps, mapDispatchToProps)(DeleteSystem);

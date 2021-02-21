@@ -7,6 +7,7 @@ import Diagnostic from './Diagnostic';
 import ChipTunning from './ChipTunning';
 import DeleteFilter from './DeleteFilter';
 import ShuttingValve from './ShuttingValve';
+import DeleteSystem from './DeleteSystem';
 import Test from './Test';
 
 export {
@@ -19,5 +20,6 @@ export {
   ChipTunning,
   DeleteFilter,
   ShuttingValve,
+  DeleteSystem,
   Test
 }
