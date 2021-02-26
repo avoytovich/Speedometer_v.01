@@ -14,21 +14,21 @@ import action from './../../utils/actions';
 import {URL} from './../../helper/constants';
 import SVG from './../../helper/customizeIcon';
 import {content} from './../../helper/constants';
-import imgDiagnostic from './../../assets/images/us-speedometer.png';
+import imgDiagnostic from './../../assets/images/contact.png';
 
-import './home.sass';
+import './contact.sass';
 
-const Home = props => {
-  console.log('Home props', props);
+const Contact = props => {
+  console.log('Contact props', props);
 
   return (
-    <div className="home-wrapper">
+    <div className="contact-wrapper">
       <Head/>
-      <div className="home-layout">
+      <div className="contact-layout">
         <Grid container spacing={0} justify="center" alignItems="center">
           <Grid item xs={6} sm={6} className="container-header-title">
             <Typography variant='h3' className='title'>
-              Про нас
+              Наші коктакти
             </Typography>
           </Grid>
           <Grid item xs={6} sm={6} className="container-header-photo">
@@ -41,7 +41,12 @@ const Home = props => {
         </Grid>
         <Grid container spacing={0} justify="center" alignItems="center">
           <Grid item xs={10} sm={10} className="container-content">
-            {content.home.map(content => (
+            <a target='_blank' href={URL.location}>
+              <Typography className='location'>
+                ми &#128506; тут
+              </Typography>
+            </a>
+            {content.contact.map(content => (
               <Typography className='content'>{content}</Typography>
             ))}
           </Grid>
@@ -64,4 +69,4 @@ const mapDispatchToProps = dispatch => {
   }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Contact);

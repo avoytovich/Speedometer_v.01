@@ -11,24 +11,23 @@ import Head from './../Header';
 import Footer from './../Footer';
 import connect from './../../utils/connectFunction';
 import action from './../../utils/actions';
-import {URL} from './../../helper/constants';
 import SVG from './../../helper/customizeIcon';
 import {content} from './../../helper/constants';
-import imgDiagnostic from './../../assets/images/us-speedometer.png';
+import imgDiagnostic from './../../assets/images/shutting-valve.png';
 
-import './home.sass';
+import './shuttingValve.sass';
 
-const Home = props => {
-  console.log('Home props', props);
+const ShuttingValve = props => {
+  console.log('ShuttingValve props', props);
 
   return (
-    <div className="home-wrapper">
+    <div className="shutting-valve-wrapper">
       <Head/>
-      <div className="home-layout">
+      <div className="shutting-valve-layout">
         <Grid container spacing={0} justify="center" alignItems="center">
           <Grid item xs={6} sm={6} className="container-header-title">
             <Typography variant='h3' className='title'>
-              Про нас
+              Відключення клапана ЕГР
             </Typography>
           </Grid>
           <Grid item xs={6} sm={6} className="container-header-photo">
@@ -41,7 +40,7 @@ const Home = props => {
         </Grid>
         <Grid container spacing={0} justify="center" alignItems="center">
           <Grid item xs={10} sm={10} className="container-content">
-            {content.home.map(content => (
+            {content.shuttingValve.map(content => (
               <Typography className='content'>{content}</Typography>
             ))}
           </Grid>
@@ -64,4 +63,4 @@ const mapDispatchToProps = dispatch => {
   }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(ShuttingValve);

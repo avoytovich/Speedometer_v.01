@@ -5,7 +5,17 @@ import LogRocket from 'logrocket';
 import history from './helper/history';
 import Context from './helper/context';
 import generalReducer from './utils/generalReducer';
-import { Home, Diagnostic, ChipTunning, DeleteFilter, Test } from './components';
+import {
+  Home, 
+  Diagnostic, 
+  ChipTunning, 
+  DeleteFilter, 
+  ShuttingValve, 
+  DeleteSystem, 
+  CorrectionSpeedometer,
+  Contact,
+  Test 
+} from './components';
 
 LogRocket.init('6vridg/test');
 
@@ -24,10 +34,10 @@ const App = props => {
           <Route path="/diagnostic" component={Diagnostic} />
           <Route path="/chip-tuning" component={ChipTunning} />
           <Route path="/delete-filter" component={DeleteFilter} />
-          <Route path="/shutting-valve" component={Test} />
-          <Route path="/delete-system" component={Test} />
-          <Route path="/correction-speedometer" component={Test} />
-          <Route path="/contact" component={Test} />
+          <Route path="/shutting-valve" component={ShuttingValve} />
+          <Route path="/delete-system" component={DeleteSystem} />
+          <Route path="/correction-speedometer" component={CorrectionSpeedometer} />
+          <Route path="/contact" component={Contact} />
           <Redirect from="/" to="/speedometer" />
         </Switch>
       </Router>
