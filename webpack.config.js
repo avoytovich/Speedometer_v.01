@@ -46,7 +46,7 @@ module.exports = {
           {
             loader: 'url-loader',
             options: { 
-              limit: 20000,
+              limit: 500000,
             }
           },
           'image-webpack-loader'
