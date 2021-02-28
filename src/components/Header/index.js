@@ -18,7 +18,7 @@ import SVG from './../../helper/customizeIcon';
 import {URL} from './../../helper/constants';
 
 import imageLogo from './../../assets/images/logo.png';
-import imageTitle from './26103fde58754e3367262f181f7402bd.jpg';
+import imageTitle from './../../assets/images/speedometer.jpg';
 import imageAvatar from './../../assets/images/avatar.svg';
 
 import './header.sass';
