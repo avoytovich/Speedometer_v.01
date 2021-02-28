@@ -30,6 +30,7 @@ const App = props => {
     <Context.Provider value={{dispatch, store}}>
       <Router history={history}>
         <Switch>
+          <Route path="/speedometer" component={Home} />
           <Route path="/diagnostic" component={Diagnostic} />
           <Route path="/chip-tuning" component={ChipTunning} />
           <Route path="/delete-filter" component={DeleteFilter} />
@@ -37,8 +38,7 @@ const App = props => {
           <Route path="/delete-system" component={DeleteSystem} />
           <Route path="/correction-speedometer" component={CorrectionSpeedometer} />
           <Route path="/contact" component={Contact} />
-          <Route path="/" component={Home} />
-          <Redirect from="/" to="/" />
+          <Redirect from="/" to="/speedometer" />
         </Switch>
       </Router>
     </Context.Provider>
