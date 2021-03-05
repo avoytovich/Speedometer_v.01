@@ -17,7 +17,7 @@ import {
   Test 
 } from './components';
 
-LogRocket.init('6vridg/test');
+// LogRocket.init('6vridg/test');
 
 const App = props => {
 
