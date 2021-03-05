@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer } from 'react';
 import { Router, Switch, Route, Redirect } from 'react-router-dom';
-import LogRocket from 'logrocket';
+// import LogRocket from 'logrocket';
 
 import history from './helper/history';
 import Context from './helper/context';
